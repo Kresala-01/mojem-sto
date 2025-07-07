@@ -6,20 +6,34 @@ header h1 {
   text-align: center;
   color: #2a7ae2;
 }
+#map {
+  height: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
 #actions {
-  margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 button {
   margin: 5px;
   padding: 10px 20px;
+  font-size: 16px;
 }
 form {
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 #proposals-list {
   margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#proposals-list div {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
 }
