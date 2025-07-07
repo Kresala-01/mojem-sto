@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>MojeMěsto – participace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>MojeMěsto</h1></header>
+  <section id="map-container">
+    <div id="map" style="height:300px;background:#eaeaea;">Mapa bude zde (Leaflet)</div>
+  </section>
+  <section id="actions">
+    <button onclick="toggleForm()">Přidat podnět</button>
+    <button onclick="showProposals()">Seznam podnětů</button>
+  </section>
+
+  <section id="form-section" style="display:none;">
+    <form id="proposal-form" onsubmit="submitProposal(); return false;">
+      <input type="text" id="description" placeholder="Popis problému" required />
+      <input type="file" id="image" accept="image/*" />
+      <select id="category">
+        <option value="doprava">Doprava</option>
+        <option value="zeleň">Zeleň</option>
+        <option value="bezpečnost">Bezpečnost</option>
+      </select>
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+
+  <section id="proposals-list"></section>
+
+  <script src="app.js"></script>
+</body>
+</html>
