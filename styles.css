@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+header h1 {
+  text-align: center;
+  color: #2a7ae2;
+}
+#actions {
+  margin-top: 20px;
+  text-align: center;
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+}
+form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#proposals-list {
+  margin-top: 30px;
+}
