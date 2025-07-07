@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <title>MojeMěsto – participace</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
   <header><h1>MojeMěsto</h1></header>
+
   <section id="map-container">
-    <div id="map" style="height:300px;background:#eaeaea;">Mapa bude zde (Leaflet)</div>
+    <div id="map"></div>
   </section>
+
   <section id="actions">
     <button onclick="toggleForm()">Přidat podnět</button>
     <button onclick="showProposals()">Seznam podnětů</button>
